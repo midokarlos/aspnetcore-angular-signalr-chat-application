@@ -1,0 +1,26 @@
+.sent-message{
+    float: right;
+    width: 300px;
+    background:#00C6FF; 
+    width: 80%;
+  }
+  
+  .sent-message h5{
+    color: white;
+  }
+  
+  .sent-message small{
+    color: white;
+  }
+  
+  
+  
+  .received-message{
+    background: whitesmoke;
+     width: 80%;
+  }
+  
+  .items-wrapper{
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }

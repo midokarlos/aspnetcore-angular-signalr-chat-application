@@ -1,0 +1,20 @@
+<div class="container">
+  <h3 class=" text-center">Let's Chat</h3>
+  <div class="md-form">
+    <div class="list-group">
+      <div *ngFor="let msg of messages" class="items-wrapper">
+        <!--Received message-->
+        <div [ngClass]="{'received-message': msg.type === 'received', 'sent-message':msg.type === 'sent' }"
+          class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{msg.message}}</h5>
+            <small>{{msg.date | date:'medium'}}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <input mdbInput (input)="txtMessage=$event.target.value" (keydown.enter)="sendMessage()"
+      placeholder="Type a message" type="text" id="form58" [value]="txtMessage" class="form-control">
+  </div>
+</div>

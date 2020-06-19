@@ -14,13 +14,12 @@
   }
   
   
-  
   .received-message{
     background: whitesmoke;
      width: 80%;
   }
   
   .items-wrapper{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 15px;
   }
